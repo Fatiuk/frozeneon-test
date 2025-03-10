@@ -6,6 +6,11 @@ interface Product {
   title: string
   price: number
   thumbnail: string
+  description: string
+  category: string
+  discountPercentage: number
+  rating: number
+  brand: string
 }
 
 export default function useProductSearch() {

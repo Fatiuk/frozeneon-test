@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ProductSearchItem from './ProductSearchItem.vue'
+import Suggestions from './Suggestions.vue'
 import useProductSearch from '../composables/useProductSearch'
 
 const {
@@ -47,7 +47,7 @@ const onInput = (event: Event) => {
             width: '100%',
           }"
         >
-          <ProductSearchItem
+          <Suggestions
             v-for="product in visibleSuggestions"
             :key="product.uniqueKey"
             :product="product"
